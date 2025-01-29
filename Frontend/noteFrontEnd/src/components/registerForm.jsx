@@ -17,7 +17,7 @@ function RegisterForm() {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.post('http://localhost:4000/user/register', {
+            const response = await axios.post('https://note-app-7.onrender.com/user/register', {
                 name: name,
                 email: email,
                 password: password

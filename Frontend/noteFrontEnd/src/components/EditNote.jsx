@@ -16,7 +16,7 @@ function EditNote() {
         const fetchNoteData = async (noteID) => {
             try {
                 const noteId = localStorage.getItem("noteID")
-                const response = await axios.get("http://localhost:4000/note/edit", {
+                const response = await axios.get("https://note-app-7.onrender.com/note/edit", {
                     headers: {
                         "noteID": noteId
                     }
@@ -49,7 +49,7 @@ function EditNote() {
         try {
             const noteId = localStorage.getItem("noteID");
             const response = await axios.patch(
-                `http://localhost:4000/note`,
+                `https://note-app-7.onrender.com/note`,
                 { title, body, noteId },
             );
             console.log("22", response.data.message);

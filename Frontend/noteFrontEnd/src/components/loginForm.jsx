@@ -17,7 +17,7 @@ function LoginForm() {
         setError(null);
         try {
             console.log("ahgd   ")
-            const response = await axios.post('http://localhost:4000/user/login', { email, password });
+            const response = await axios.post('https://note-app-7.onrender.com/user/login', { email, password });
             const token = response.data.token;
             const user = response.data.user;
             // Store the token in local storage

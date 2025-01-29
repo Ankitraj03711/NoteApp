@@ -20,7 +20,7 @@ function NoteCard({ note }) {
             // const objectId = new ObjectId(stringId);
             console.log("fsd");
             console.log(noteId)
-            const response = await axios.delete('http://localhost:4000/note/',
+            const response = await axios.delete('https://note-app-7.onrender.com/note/',
                 {
                     headers:{
                         "noteID": noteId 

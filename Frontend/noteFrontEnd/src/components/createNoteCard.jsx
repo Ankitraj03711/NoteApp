@@ -18,7 +18,7 @@ function CreateNoteCard({ user }) {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('http://localhost:4000/note/create',
+            const response = await axios.post('https://note-app-7.onrender.com/note/create',
                 { title, body, user });
 
             console.log(response.data.status);

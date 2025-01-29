@@ -14,7 +14,7 @@ function NoteComponent() {
         const fetchNotes = async () => { 
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:4000/note', {
+                const response = await axios.get('https://note-app-7.onrender.com/note', {
                     headers: {
                         'Authorization': token
                     }
