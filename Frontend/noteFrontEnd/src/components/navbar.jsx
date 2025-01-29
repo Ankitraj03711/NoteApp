@@ -6,7 +6,7 @@ const NAV = () => {
     return (
         <>
             <Navbar fixed="top" bg="dark" expand="lg">
-                <Navbar.Brand className="text-white mx-auto">Prince Note App</Navbar.Brand>
+                <Navbar.Brand className="text-white mx-auto">Ankit Note App</Navbar.Brand>
             </Navbar>
         </>
     );
